@@ -203,6 +203,32 @@
     @apply z-50 flex-between w-full sticky bottom-0 rounded-t-[20px] bg-dark-2 px-5 py-4 md:hidden;
   }
 
+
+
+  /* Adjustments for mobile view */
+  @media (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .content {
+    flex-grow: 1;
+  }
+
+  .bottom-bar {
+    flex-shrink: 0;
+  }
+}
+
+
+
+
+
+
+
+
   /* File uploader */
   .file_uploader-img {
     @apply h-80 lg:h-[480px] w-full rounded-[24px] object-cover object-top;
