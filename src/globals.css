@@ -139,6 +139,22 @@
     @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-5 md:px-8 lg:p-14 custom-scrollbar;
   }
 
+
+  /* Adjustments for mobile view */
+@media (max-width: 767px) {
+  .home-container {
+    flex-grow: 1; /* Allow the container to grow to fill available space */
+    padding-top: env(safe-area-inset-top); /* Dynamically adjust padding to account for top safe area */
+    padding-bottom: env(safe-area-inset-bottom); /* Dynamically adjust padding to account for bottom safe area */
+  }
+}
+
+
+
+
+
+
+
   .home-posts img {
     max-width: 100%;
     height: auto;
