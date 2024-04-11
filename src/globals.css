@@ -172,17 +172,20 @@
   }
   
 
-  /* Post details info */
+ /* Post details info */
 .post_details-info {
-  @apply bg-dark-2 flex flex-col gap-5 lg:gap-7 flex-1 items-start p-8 rounded-[30px] max-w-full mx-auto;
+  @apply bg-dark-2 flex flex-col gap-5 lg:gap-7 flex-1 items-start p-8 rounded-[30px];
+  width: 100%; /* Set width to 100% */
 }
 
 /* Adjustments for mobile view */
 @media (max-width: 767px) {
   .post_details-info {
-    max-width: calc(100% - 30px); /* Adjusted to account for left and right padding of post container */
+    padding-left: 15px; /* Match padding of post container */
+    padding-right: 15px; /* Match padding of post container */
   }
 }
+
 
 
   .post_details-delete_btn {
