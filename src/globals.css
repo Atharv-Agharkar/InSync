@@ -137,14 +137,18 @@
   /* Home */
   .home-container {
     @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-5 md:px-8 lg:p-14 custom-scrollbar;
-    height: auto;
-    width: auto;
+  }
+
+  @media (max-width: 767px) {
+    .home-container {
+      padding-top: 80px; /* Match padding of top bar */
+      padding-bottom: 80px; /* Match padding of bottom bar */
+    }
   }
 
   .home-posts img {
     max-width: 100%;
     height: auto;
-    width: auto;
   }
 
   .home-creators {
@@ -155,7 +159,6 @@
   .post_details-container {
     @apply flex flex-col flex-1 gap-10 overflow-scroll py-10 px-5 md:p-14 custom-scrollbar items-center;
     height: auto; /* Adjust the height as needed */
-    width:auto;
   }
 
 
