@@ -162,8 +162,8 @@
 
   @media (max-width: 767px) {
     .post_details-card {
-      padding-left: 15px; /* Match padding of bottom bar and top bar */
-      padding-right: 15px; /* Match padding of bottom bar and top bar */
+      padding-left: auto; /* Match padding of bottom bar and top bar */
+      padding-right: auto; /* Match padding of bottom bar and top bar */
     }
   }
 
