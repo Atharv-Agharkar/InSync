@@ -140,14 +140,12 @@
   }
 
 
-  /* Adjustments for mobile view */
-@media (max-width: 767px) {
-  .home-container {
-    flex-grow: 1; /* Allow the container to grow to fill available space */
-    padding-top: env(safe-area-inset-top); /* Dynamically adjust padding to account for top safe area */
-    padding-bottom: env(safe-area-inset-bottom); /* Dynamically adjust padding to account for bottom safe area */
+  @media (max-width: 767px) {
+    .home-container {
+      padding-top: 80px; /* Match padding of top bar */
+      padding-bottom: 80px; /* Match padding of bottom bar */
+    }
   }
-}
 
 
 
@@ -195,7 +193,7 @@
 }
 
 /* Adjustments for mobile view */
-@media (max-width: 767px) {
+ @media (max-width: 767px) {
   .post_details-info {
     padding-left: 15px; /* Match padding of post container */
     padding-right: 15px; /* Match padding of post container */
